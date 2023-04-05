@@ -1,0 +1,27 @@
+.Cart {
+    margin: 60px;
+    border: 5px solid rgb(185, 185, 185);
+    border-radius: 15px;
+    box-shadow: 2px 2px 15px black;
+    padding: 40px; 
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.Cart span {
+    font-size: 0.9rem;
+    font-weight: 400;
+    float: right;
+}
+.Total {
+    float: right;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.Cart button {
+    margin-right: 20px;
+    width: 40px;
+}

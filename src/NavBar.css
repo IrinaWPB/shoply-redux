@@ -1,0 +1,20 @@
+.NavBar {
+    height: 80px;
+    background-color: rgb(163, 163, 163);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.NavBar a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: aliceblue;
+    font-weight: 700;
+}
+
+
+a:hover {
+    text-shadow: 1px 1px 3px rgb(89, 89, 89);
+}
