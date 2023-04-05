@@ -7,14 +7,20 @@ import './Cart.css'
 const Cart = () => {
     const dispatch = useDispatch()
     const items = useSelector(store => store.cart.itemsInCart)
+
+    //total price
     let total = 0;
         for (let item of items) {
             total = total + item.price
         }
+    
+    //create object with names and occurences
     let obj = {}
     for (let item of items) {
         obj[item.name] = obj[item.name] ? obj[item.name] + 1 : 1
     }
+
+    //function finds item object by name
     const getByName = (name) => {
         let item = items.filter(i=> i.name === name) 
         return item[0]
