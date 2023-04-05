@@ -13,10 +13,8 @@ const Cart = () => {
         }
     let obj = {}
     for (let item of items) {
-        console.log(item)
         obj[item.name] = obj[item.name] ? obj[item.name] + 1 : 1
     }
-
     const getByName = (name) => {
         let item = items.filter(i=> i.name === name) 
         return item[0]
@@ -33,9 +31,6 @@ const Cart = () => {
            dispatch(delete_from_cart(item, itemIndex)) 
         }
     }
-
-    
-
 
     return (
         <div className='Cart'>
@@ -56,7 +51,6 @@ const Cart = () => {
                             
                         </h4>
                         
-                      
                         <div>
                             <button onClick={() => addItem(itemName)}> + </button>
                             <button onClick={() => removeItem(itemName)}> - </button>
